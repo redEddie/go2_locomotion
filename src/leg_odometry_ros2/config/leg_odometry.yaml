@@ -1,0 +1,12 @@
+leg_odometry_node:
+  ros__parameters:
+    lowstate_topic: "/lowstate"
+    twist_topic: "/go2/leg_odom/twist"
+    odom_topic: "/go2/leg_odom/odom"
+    base_frame_id: "base"
+    odom_frame_id: "odom"
+    contact_force_threshold: -1
+    moving_window_size: 120
+    jacobian_eps: 1.0e-5
+    tick_in_ms: true
+    default_dt: 0.002
