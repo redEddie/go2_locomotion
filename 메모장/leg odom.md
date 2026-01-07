@@ -1,4 +1,8 @@
 # Leg odometry (Go2)
+## 입력/출력
+- 입력: /lowstate (joint q/dq, IMU gyro, foot_force)
+- 출력: /go2/leg_odom/twist, /go2/leg_odom/odom
+- 내부: FK + Jacobian(수치 미분), stance 평균, moving window filter
 
 ## 구현 위치
 - `example/go2_locomotion/src/leg_odometry_ros2/src/leg_odometry_node.cpp`
