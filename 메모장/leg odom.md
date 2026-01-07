@@ -23,7 +23,7 @@
 
 ## 참고
 - `lowstate_topic` 기본값은 `/lowstate`.
-- unitree mujoco가 pub하는 토픽 중 /sportmode가 /footforce를 제공하지 않는 관계로 [contact_force_threshold_](https://github.com/redEddie/go2_locomotion/blob/main/src/leg_odometry_ros2/src/leg_odometry_node.cpp#L203)를 0으로 설정해야 동작함.
+- unitree mujoco가 pub하는 토픽 중 /sportmodestate가 /footforce를 제공하지 않는 관계로 [contact_force_threshold_](https://github.com/redEddie/go2_locomotion/blob/main/src/leg_odometry_ros2/src/leg_odometry_node.cpp#L203)를 0으로 설정해야 동작함.
 
 ## 빌드/실행
 ```bash
