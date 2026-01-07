@@ -22,7 +22,8 @@
   - unitree_go, Eigen3 의존성 추가
 
 ## 참고
-- `lowstate_topic` 기본값은 `/lowstate`. 시뮬레이터가 `/rt/lowstate`를 쓰면 config에서 변경.
+- `lowstate_topic` 기본값은 `/lowstate`.
+- unitree mujoco가 pub하는 토픽 중 /sportmode가 /footforce를 제공하지 않는 관계로 [contact_force_threshold_](https://github.com/redEddie/go2_locomotion/blob/main/src/leg_odometry_ros2/src/leg_odometry_node.cpp#L203)를 0으로 설정해야 동작함.
 
 ## 빌드/실행
 ```bash
